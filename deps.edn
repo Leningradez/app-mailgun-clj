@@ -1,0 +1,12 @@
+{:paths ["src" "resources" ]
+ :deps {environ      {:mvn/version "1.1.0"}
+        clj-http     {:mvn/version "3.6.1"}
+        de.ubercode.clostache/clostache {:mvn/version "1.4.0"}
+        aidbox-sdk   {:git/url "https://github.com/Aidbox/aidbox-clojure-sdk" :sha "057ebd1a542bb17c7a910283ae942f56a89167f1"}}
+
+ :mvn/repos {"central" {:url "https://repo1.maven.org/maven2/"}
+             "clojars" {:url "https://repo.clojars.org/"}}
+
+ :aliases {:dev {:extra-paths ["test"]
+                 :jvm-opts ^:replace ["-XX:-OmitStackTraceInFastThrow"]
+                 :extra-deps {org.clojure/tools.cli {:mvn/version "0.3.7"}}}}}

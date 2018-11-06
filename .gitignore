@@ -1,1 +1,5 @@
 license.env
+pgdata
+static
+.cpcache
+.nrepl-port
